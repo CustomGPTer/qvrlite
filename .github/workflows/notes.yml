@@ -1,0 +1,23 @@
+# Replaces the notes of a release that already exists.
+name: Update release notes
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Tag of the release, such as v1.0
+        required: true
+      notes:
+        description: The new notes
+        required: true
+permissions:
+  contents: write
+jobs:
+  notes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Replace the notes
+        run: gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --notes "$NOTES"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          NOTES: ${{ inputs.notes }}
