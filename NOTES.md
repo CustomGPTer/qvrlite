@@ -1,10 +1,17 @@
-QVRLite 1.0.0, first test build.
+QVRLite 1.0.1 beta 1
 
-A smaller, simpler QVR. It installs as a separate app beside QVR, with its own settings and recordings.
+Fixes
+- Tapping a recording icon or widget when QVRLite can't record (camera or microphone access turned off) now shows "QVRLite could not start" instead of closing the app.
+- Recordings you delete in your Gallery app drop out of QVRLite's list by themselves, and Dashcam keeps going.
+- Only your own QVRLite icons can start or stop a recording. Other apps on the phone can't.
+- Photo mode lets focus and brightness settle for about a second, so photos are sharper and better lit.
+- The main screen shows the right version number.
 
-- One-tap recording icons for the home screen: tap to start, tap again to stop and save.
-- Front or rear camera and lens choice, pause and resume, quality and sound settings, time and file-size limits with repeat, and a dashcam mode that keeps the newest clips.
-- PIN lock, private storage, and a recordings list with previews, export and bulk delete.
-- No flashlight, location or vibration.
+New
+- An animated opening screen, and a cleaner start-up screen on Android 12 and later.
+- Settings > About QVRLite: website, check for updates, more apps, privacy policy and email, all on torusapps.com.
 
-Android 10 or later. No internet access, no adverts and no account.
+Removed
+- Recording reminders.
+
+Install over your current QVRLite to keep your settings and recordings.
